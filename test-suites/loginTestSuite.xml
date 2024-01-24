@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login test suite" parallel="tests">
+    <test name="Login tests using Playwright on Chrome" parallel="methods">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.playwright.java.tests.LoginTests">
+                <methods>
+                    <include name="gotoLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
