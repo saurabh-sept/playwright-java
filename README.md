@@ -10,7 +10,7 @@ MacOS 12 Monterey or MacOS 13 Ventura.
 
 Debian 11, Debian 12, Ubuntu 20.04 or Ubuntu 22.04, with x86-64 or arm64 architecture.
 
-JDK1.8
+JDK1.8+
 
 # Installation
 One very convenient way to install is through a package manager, example, `Chocolatey` `https://chocolatey.org/install`.
