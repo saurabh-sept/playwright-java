@@ -31,7 +31,7 @@ For individual files: `mvn clean test -Dsuite-xml="test-suites/loginTestSuite.xm
 
 For Playwright tracing log: `mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="show-trace target/trace.zip"`
 
-For Surefire testng reports: `target/surefire-reports`
+For Surefire testng reports: `target/surefire-reports/`
 
 Tests are currently only configured to run in `Chromium` browser, which can be modified
 
