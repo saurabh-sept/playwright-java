@@ -22,7 +22,8 @@ Git: `choco install git`
 Each version of Playwright needs specific versions of browser binaries to operate. You will need to use the Playwright CLI to install these browsers. With every release, Playwright updates the versions of the browsers it supports, so that the latest Playwright would support the latest browsers at any moment. It means that every time you update Playwright, you might need to re-run the install CLI command.
 
 # Running tests and reporting
-From VSCode Test Explorer: Run or Debug tests 
+## From VSCode Test Explorer: 
+Run or Debug tests 
 
 ## From Command line:
 For full suite: `mvn clean test`
