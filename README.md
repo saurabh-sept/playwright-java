@@ -1,5 +1,5 @@
 # About
-This is a test automation framework utilising open source technologies, namely, `Playwright`, `Java` with `TestNG` . It can do both UI and API based test automation.
+This is a test automation framework utilising open source technologies, namely, `Playwright`, `Java`, `Maven` with `TestNG` . It can do both UI and API based test automation.
 
 It currently has UI tests automated for demo puposes in the `tests` folder.
 
@@ -22,11 +22,16 @@ Git: `choco install git`
 Each version of Playwright needs specific versions of browser binaries to operate. You will need to use the Playwright CLI to install these browsers. With every release, Playwright updates the versions of the browsers it supports, so that the latest Playwright would support the latest browsers at any moment. It means that every time you update Playwright, you might need to re-run the install CLI command.
 
 # Running tests and reporting
-`mvn clean test`
+From VSCode Test Explorer: Run or Debug tests 
 
-For individual files: `mvn clean install -Dsuite-xml="test-suites/testng.xml"`
+## From Command line:
+For full suite: `mvn clean test`
 
-For reporting: `mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="show-trace target/trace.zip"`
+For individual files: `mvn clean test -Dsuite-xml="test-suites/loginTestSuite.xml"`
+
+For Playwright tracing log: `mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="show-trace target/trace.zip"`
+
+For Surefire testng reports: `target/surefire-reports`
 
 Tests are currently only configured to run in `Chromium` browser, which can be modified
 

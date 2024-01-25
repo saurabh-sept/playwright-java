@@ -1,12 +1,6 @@
-node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 .vscode/
 target/
-package-lock.json
-package.json
-playwright.config.ts
-tests/
-tests-examples/
